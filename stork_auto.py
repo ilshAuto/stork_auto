@@ -97,12 +97,7 @@ async def get_cognito_tokens(email, password, proxy_url):
             raise
 
 
-async def get_proxy():
-    async with httpx.AsyncClient() as client:
-        res = await client.get('http://127.0.0.1:8888/get_port')
-        port = res.json()['port']
-        proxy = [f'socks5://192.168.0.105:{port}']
-        return random.choice(proxy)
+
 
 
 async def save_refrral_code(referral_code):
