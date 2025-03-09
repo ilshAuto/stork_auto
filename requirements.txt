@@ -1,0 +1,8 @@
+aiofiles
+certifi
+httpx
+urllib3
+botocore
+loguru
+curl_cffi
+pycognito
